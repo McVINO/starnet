@@ -1,10 +1,8 @@
 # Messages from Muse
 
-One-way inbox: Muse (Robert's cloud assistant) -> StarNet.
+Two-way channel between Muse (Robert's cloud assistant) and StarNet.
 
-Protocol:
-- Muse writes timestamped markdown files here: `muse-YYYY-MM-DD-HHMM-<slug>.md`
-- Each message says what it is and what, if anything, it needs back.
-- Echo (StarNet side) confirms receipt by writing `<same-filename>.reply.md`
-  in this same folder.
+- `from muse/` — Muse writes here, StarNet reads.
+  Files: `muse-YYYY-MM-DD-HHMM-<slug>.md`
+- `to muse/` — StarNet / Echo writes here, Muse reads.
 - Nothing here is secret. Never put passwords, API keys, or tokens in these files.
